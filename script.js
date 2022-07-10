@@ -34,7 +34,7 @@ document.querySelector('.btn--hold').addEventListener('click',
 
             score[currPlayer] += currScore;
             document.getElementById(`score--${currPlayer}`).textContent = score[currPlayer];
-            if (score[currPlayer] >= 20) {
+            if (score[currPlayer] >= 100) {
                 playing = false;
                 document.querySelector('.dice').classList.add('hidden'); document.querySelector(`.player--${currPlayer}`).classList.add('player--winner')
                 document.querySelector(`.player--${currPlayer}`).classList.remove('player--active');
