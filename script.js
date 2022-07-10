@@ -30,7 +30,7 @@ document.querySelector('.btn--roll').addEventListener('click',
 document.querySelector('.btn--hold').addEventListener('click',
     () => {
         if (playing) {
-
+            document.querySelector('.dice').classList.add('hidden');
 
             score[currPlayer] += currScore;
             document.getElementById(`score--${currPlayer}`).textContent = score[currPlayer];
